@@ -34,7 +34,7 @@ The system uses TF-IDF for text feature extraction and compares Logistic Regress
 - Compares two machine learning algorithms.
 - Displays model performance using evaluation metrics.
 - Identifies the better-performing algorithm.
-- ## 1. Algorithms Used
+## 1. Algorithms Used
 
 ### Logistic Regression
 Logistic Regression is a supervised machine learning classification algorithm used to classify student feedback into three sentiment categories: Positive, Negative, and Neutral. It learns patterns from the TF-IDF features and predicts the sentiment of the feedback.
