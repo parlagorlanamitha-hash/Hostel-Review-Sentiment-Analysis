@@ -34,6 +34,53 @@ The system uses TF-IDF for text feature extraction and compares Logistic Regress
 - Compares two machine learning algorithms.
 - Displays model performance using evaluation metrics.
 - Identifies the better-performing algorithm.
+- ## 1. Algorithms Used
+
+### Logistic Regression
+Logistic Regression is a supervised machine learning classification algorithm used to classify student feedback into three sentiment categories: Positive, Negative, and Neutral. It learns patterns from the TF-IDF features and predicts the sentiment of the feedback.
+
+### Support Vector Machine (SVM)
+Support Vector Machine is a supervised machine learning algorithm that finds an optimal decision boundary to separate different sentiment categories. It is used to classify hostel feedback into Positive, Negative, and Neutral sentiments.
+
+### TF-IDF (Term Frequency–Inverse Document Frequency)
+TF-IDF is an NLP feature extraction technique that converts text feedback into numerical values based on the importance of words. It helps machine learning algorithms understand and process student opinions.
+
+### Algorithm Comparison
+
+| Algorithm | Accuracy |
+|---|---:|
+| Logistic Regression | 59.26% |
+| SVM | 48.15% |
+
+**Best Performing Algorithm:** Logistic Regression
+
+## 2. Dataset Description
+
+**Dataset Name:** `hostel_life_sentiment_dataset.xlsx`
+
+**Total Records:** 131
+
+**Target Column:** `Overall hostel experience?`
+
+### Dataset Features
+- Student feedback about hostel facilities.
+- Overall hostel experience ratings.
+- Suggestions for hostel improvements.
+- Other available hostel-related survey responses.
+
+### Sentiment Categories
+- **Positive:** Represents positive student experiences.
+- **Negative:** Represents negative student experiences.
+- **Neutral:** Represents neutral student experiences.
+
+### Dataset Processing
+- Loaded and cleaned the dataset using Pandas.
+- Converted overall experience ratings into sentiment labels.
+- Used student feedback and suggestions as text features.
+- Applied TF-IDF for text feature extraction.
+- Split the dataset into 80% training and 20% testing data.
+
+The processed dataset is used to train and evaluate Logistic Regression and SVM algorithms.
 
 ## 5. Inputs
 
